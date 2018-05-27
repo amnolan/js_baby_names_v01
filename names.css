@@ -1,0 +1,107 @@
+body {
+	background-color: white;
+	font-size: 12pt;
+	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+}
+
+/* the overall shaded graph region */
+#graph {
+	position: relative;
+	margin: auto;
+	margin-top: 1.5em;
+	padding: 0px;
+	width: 670px;
+	height: 250px;
+	border: solid 2px black;
+	background-color: #F0F0F0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+#meaningarea {
+	width: 70%;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* The paragraph that stores the baby's name meaning */
+#meaning {
+	text-align: center;
+	margin: 0px;
+}
+
+#namearea {
+	margin: auto;
+	width: 12em;
+	text-align: center;
+}
+
+.popular {
+	color: red;
+}
+
+#w3c {
+	margin-top: 2em;
+	text-align: center;
+}
+
+#w3c img {
+	border-width: 0px;
+}
+
+/*
+Style for the pink bars for rankings, plus the actual ranking numbers inside.
+By making a bar of the appropriate size and putting a ranking number as its
+inner text content, the bar will have the desired pink appearance, with the
+large ranking text inside at its top-middle.
+*/
+.ranking {
+	background-color: #FFCCCC;
+	border: none;
+	bottom: 0px;
+	font-weight: bold;
+	font-size: 18pt;
+	font-family: "Century Gothic", "Helvetica", "Arial", sans-serif;
+	margin: 0px 0px;
+	position: absolute;
+	text-align: center;
+	width: 50px;
+}
+
+/*
+Style for the decade labels at the top of the graph region.
+If you position them vertically at the top of the graph, this style's
+"top: -1.5em;" part will make the numbers appear above the graph.
+*/
+.year {
+	top: -1.5em;         /* makes the text appear above the bar */
+	font-size: 10pt;
+	margin: 0px 0px;
+	position: absolute;
+	text-align: center;
+	width: 50px;
+}
+
+/* Style for the hidden div to contain auto-complete results. */
+#autocompletearea {
+	background-color: white;
+	border: 1px solid gray;
+}
+
+/* Remove the bullets from the auto-complete results. */
+#autocompletearea ul {
+	list-style-type: none;
+	padding: 0em;
+	text-align: left;
+}
+
+/* Lights up the selected element of the auto-complete results. */
+#autocompletearea ul .selected {
+	color: HighlightText;
+	background-color: Highlight;
+}
